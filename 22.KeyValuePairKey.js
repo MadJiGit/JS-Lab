@@ -17,8 +17,14 @@ function stringIn(line){
       keyDict[key].push(value);
    }
    
+   // if(!keyCheck in keyDict){
+   //    console.log("None"); 
+   // }
    if(keyCheck in keyDict){
-      console.log(keyDict[keyCheck].join('\n'));
+      console.log(keyDict[keyCheck].join('\n'));      
+   }
+   else{
+      console.log("None"); 
    }
 
 }
@@ -31,5 +37,5 @@ stringIn ([
    '4 test2',
    '4 test3',
    '4 test5',
-   '4'
+   '5'
 ]);
